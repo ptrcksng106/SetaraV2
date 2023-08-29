@@ -11,7 +11,7 @@
 		E225E4722A9D95A900539D19 /* ScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E225E4712A9D95A900539D19 /* ScannerView.swift */; };
 		E225E4742A9D964B00539D19 /* TextRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E225E4732A9D964B00539D19 /* TextRecognizer.swift */; };
 		F75152EA2A9C6A2100F532EC /* SetaraV2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75152E92A9C6A2100F532EC /* SetaraV2App.swift */; };
-		F75152EC2A9C6A2100F532EC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75152EB2A9C6A2100F532EC /* ContentView.swift */; };
+		F75152EC2A9C6A2100F532EC /* OcrView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75152EB2A9C6A2100F532EC /* OcrView.swift */; };
 		F75152EE2A9C6A2200F532EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F75152ED2A9C6A2200F532EC /* Assets.xcassets */; };
 		F75152F12A9C6A2200F532EC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F75152F02A9C6A2200F532EC /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
@@ -23,7 +23,7 @@
 		E225E4732A9D964B00539D19 /* TextRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextRecognizer.swift; sourceTree = "<group>"; };
 		F75152E62A9C6A2100F532EC /* SetaraV2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SetaraV2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F75152E92A9C6A2100F532EC /* SetaraV2App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetaraV2App.swift; sourceTree = "<group>"; };
-		F75152EB2A9C6A2100F532EC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F75152EB2A9C6A2100F532EC /* OcrView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OcrView.swift; sourceTree = "<group>"; };
 		F75152ED2A9C6A2200F532EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F75152F02A9C6A2200F532EC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -59,7 +59,7 @@
 			isa = PBXGroup;
 			children = (
 				F75152E92A9C6A2100F532EC /* SetaraV2App.swift */,
-				F75152EB2A9C6A2100F532EC /* ContentView.swift */,
+				F75152EB2A9C6A2100F532EC /* OcrView.swift */,
 				E225E46E2A9C74F300539D19 /* ScanData.swift */,
 				E225E4732A9D964B00539D19 /* TextRecognizer.swift */,
 				E225E4712A9D95A900539D19 /* ScannerView.swift */,
@@ -151,7 +151,7 @@
 				E225E46F2A9C74F300539D19 /* ScanData.swift in Sources */,
 				E225E4722A9D95A900539D19 /* ScannerView.swift in Sources */,
 				E225E4742A9D964B00539D19 /* TextRecognizer.swift in Sources */,
-				F75152EC2A9C6A2100F532EC /* ContentView.swift in Sources */,
+				F75152EC2A9C6A2100F532EC /* OcrView.swift in Sources */,
 				F75152EA2A9C6A2100F532EC /* SetaraV2App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

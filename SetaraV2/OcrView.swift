@@ -12,7 +12,7 @@ import Vision
 
 import SwiftUI
 
-struct ContentView: View {
+struct OcrView: View {
     @State private var showScannerSheet = false
     @State private var texts:[ScanData] = []
     var body: some View {
@@ -60,6 +60,6 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        OcrView()
     }
 }
