@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E225E46F2A9C74F300539D19 /* ScanData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E225E46E2A9C74F300539D19 /* ScanData.swift */; };
+		E225E4722A9D95A900539D19 /* ScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E225E4712A9D95A900539D19 /* ScannerView.swift */; };
+		E225E4742A9D964B00539D19 /* TextRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E225E4732A9D964B00539D19 /* TextRecognizer.swift */; };
 		F75152EA2A9C6A2100F532EC /* SetaraV2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75152E92A9C6A2100F532EC /* SetaraV2App.swift */; };
 		F75152EC2A9C6A2100F532EC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75152EB2A9C6A2100F532EC /* ContentView.swift */; };
 		F75152EE2A9C6A2200F532EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F75152ED2A9C6A2200F532EC /* Assets.xcassets */; };
@@ -14,6 +17,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E225E46E2A9C74F300539D19 /* ScanData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanData.swift; sourceTree = "<group>"; };
+		E225E4702A9D950B00539D19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		E225E4712A9D95A900539D19 /* ScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerView.swift; sourceTree = "<group>"; };
+		E225E4732A9D964B00539D19 /* TextRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextRecognizer.swift; sourceTree = "<group>"; };
 		F75152E62A9C6A2100F532EC /* SetaraV2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SetaraV2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F75152E92A9C6A2100F532EC /* SetaraV2App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetaraV2App.swift; sourceTree = "<group>"; };
 		F75152EB2A9C6A2100F532EC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -53,7 +60,11 @@
 			children = (
 				F75152E92A9C6A2100F532EC /* SetaraV2App.swift */,
 				F75152EB2A9C6A2100F532EC /* ContentView.swift */,
+				E225E46E2A9C74F300539D19 /* ScanData.swift */,
+				E225E4732A9D964B00539D19 /* TextRecognizer.swift */,
+				E225E4712A9D95A900539D19 /* ScannerView.swift */,
 				F75152ED2A9C6A2200F532EC /* Assets.xcassets */,
+				E225E4702A9D950B00539D19 /* Info.plist */,
 				F75152EF2A9C6A2200F532EC /* Preview Content */,
 			);
 			path = SetaraV2;
@@ -137,6 +148,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E225E46F2A9C74F300539D19 /* ScanData.swift in Sources */,
+				E225E4722A9D95A900539D19 /* ScannerView.swift in Sources */,
+				E225E4742A9D964B00539D19 /* TextRecognizer.swift in Sources */,
 				F75152EC2A9C6A2100F532EC /* ContentView.swift in Sources */,
 				F75152EA2A9C6A2100F532EC /* SetaraV2App.swift in Sources */,
 			);
@@ -267,9 +281,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SetaraV2/Preview Content\"";
-				DEVELOPMENT_TEAM = LH73CAYKFH;
+				DEVELOPMENT_TEAM = NYP6NH36S6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SetaraV2/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "$(PRODUCT_NAME) requires permission to scan";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -296,9 +312,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SetaraV2/Preview Content\"";
-				DEVELOPMENT_TEAM = LH73CAYKFH;
+				DEVELOPMENT_TEAM = NYP6NH36S6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SetaraV2/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "$(PRODUCT_NAME) requires permission to scan";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
