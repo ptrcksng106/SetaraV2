@@ -11,6 +11,10 @@
 		F75152EC2A9C6A2100F532EC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75152EB2A9C6A2100F532EC /* ContentView.swift */; };
 		F75152EE2A9C6A2200F532EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F75152ED2A9C6A2200F532EC /* Assets.xcassets */; };
 		F75152F12A9C6A2200F532EC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F75152F02A9C6A2200F532EC /* Preview Assets.xcassets */; };
+		F7601D3B2AA06FCC00E177B4 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7601D3A2AA06FCC00E177B4 /* MainView.swift */; };
+		F7601D632AA3141000E177B4 /* RoundedRectangleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7601D622AA3141000E177B4 /* RoundedRectangleView.swift */; };
+		F7601D652AA314DE00E177B4 /* CustomColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7601D642AA314DE00E177B4 /* CustomColor.swift */; };
+		F7601D672AA317DB00E177B4 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7601D662AA317DB00E177B4 /* CustomButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,10 @@
 		F75152EB2A9C6A2100F532EC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F75152ED2A9C6A2200F532EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F75152F02A9C6A2200F532EC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F7601D3A2AA06FCC00E177B4 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		F7601D622AA3141000E177B4 /* RoundedRectangleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedRectangleView.swift; sourceTree = "<group>"; };
+		F7601D642AA314DE00E177B4 /* CustomColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomColor.swift; sourceTree = "<group>"; };
+		F7601D662AA317DB00E177B4 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +59,8 @@
 		F75152E82A9C6A2100F532EC /* SetaraV2 */ = {
 			isa = PBXGroup;
 			children = (
+				F7601D612AA313E300E177B4 /* Component */,
+				F7601D392AA06FB000E177B4 /* Views */,
 				F75152E92A9C6A2100F532EC /* SetaraV2App.swift */,
 				F75152EB2A9C6A2100F532EC /* ContentView.swift */,
 				F75152ED2A9C6A2200F532EC /* Assets.xcassets */,
@@ -65,6 +75,24 @@
 				F75152F02A9C6A2200F532EC /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F7601D392AA06FB000E177B4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F7601D3A2AA06FCC00E177B4 /* MainView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F7601D612AA313E300E177B4 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				F7601D622AA3141000E177B4 /* RoundedRectangleView.swift */,
+				F7601D642AA314DE00E177B4 /* CustomColor.swift */,
+				F7601D662AA317DB00E177B4 /* CustomButton.swift */,
+			);
+			path = Component;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +166,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				F75152EC2A9C6A2100F532EC /* ContentView.swift in Sources */,
+				F7601D3B2AA06FCC00E177B4 /* MainView.swift in Sources */,
+				F7601D672AA317DB00E177B4 /* CustomButton.swift in Sources */,
+				F7601D632AA3141000E177B4 /* RoundedRectangleView.swift in Sources */,
+				F7601D652AA314DE00E177B4 /* CustomColor.swift in Sources */,
 				F75152EA2A9C6A2100F532EC /* SetaraV2App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
