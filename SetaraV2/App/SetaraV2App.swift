@@ -9,9 +9,14 @@ import SwiftUI
 
 @main
 struct SetaraV2App: App {
+    
+    @State private var manager: DataManager = DataManager()
+    
     var body: some Scene {
         WindowGroup {
             MainView()
+                .environmentObject(manager)
+                .environment(\.managedObjectContext, manager.container.viewContext)
         }
     }
 }

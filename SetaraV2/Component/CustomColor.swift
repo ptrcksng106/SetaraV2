@@ -10,4 +10,5 @@ import SwiftUI
 struct CustomColor {
     static let roundedGrayColor = Color("GrayRectangleBorder")
     static let roundedBlackColor = Color("BlackColorRectangleBorder")
+    static let cardBlackColor = Color("BlackColorCard")
 }

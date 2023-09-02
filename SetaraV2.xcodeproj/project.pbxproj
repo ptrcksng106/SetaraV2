@@ -15,6 +15,12 @@
 		F7601D632AA3141000E177B4 /* RoundedRectangleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7601D622AA3141000E177B4 /* RoundedRectangleView.swift */; };
 		F7601D652AA314DE00E177B4 /* CustomColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7601D642AA314DE00E177B4 /* CustomColor.swift */; };
 		F7601D672AA317DB00E177B4 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7601D662AA317DB00E177B4 /* CustomButton.swift */; };
+		F7601D6A2AA31AFA00E177B4 /* View-Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7601D692AA31AFA00E177B4 /* View-Extensions.swift */; };
+		F7601D722AA3215000E177B4 /* ParticipantModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7601D712AA3215000E177B4 /* ParticipantModel.swift */; };
+		F7601D742AA321FB00E177B4 /* ParticipantProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7601D732AA321FB00E177B4 /* ParticipantProvider.swift */; };
+		F7601D772AA323B000E177B4 /* Participants.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F7601D752AA323B000E177B4 /* Participants.xcdatamodeld */; };
+		F7601D792AA32AA800E177B4 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7601D782AA32AA800E177B4 /* DataManager.swift */; };
+		F7601D7C2AA32FE800E177B4 /* EmptyParticipantMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7601D7B2AA32FE800E177B4 /* EmptyParticipantMainView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +33,12 @@
 		F7601D622AA3141000E177B4 /* RoundedRectangleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedRectangleView.swift; sourceTree = "<group>"; };
 		F7601D642AA314DE00E177B4 /* CustomColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomColor.swift; sourceTree = "<group>"; };
 		F7601D662AA317DB00E177B4 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		F7601D692AA31AFA00E177B4 /* View-Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View-Extensions.swift"; sourceTree = "<group>"; };
+		F7601D712AA3215000E177B4 /* ParticipantModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParticipantModel.swift; sourceTree = "<group>"; };
+		F7601D732AA321FB00E177B4 /* ParticipantProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParticipantProvider.swift; sourceTree = "<group>"; };
+		F7601D762AA323B000E177B4 /* Participants.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Participants.xcdatamodel; sourceTree = "<group>"; };
+		F7601D782AA32AA800E177B4 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		F7601D7B2AA32FE800E177B4 /* EmptyParticipantMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyParticipantMainView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,10 +71,12 @@
 		F75152E82A9C6A2100F532EC /* SetaraV2 */ = {
 			isa = PBXGroup;
 			children = (
-				F7601D612AA313E300E177B4 /* Component */,
+				F7601D702AA3214500E177B4 /* Models */,
 				F7601D392AA06FB000E177B4 /* Views */,
-				F75152E92A9C6A2100F532EC /* SetaraV2App.swift */,
-				F75152EB2A9C6A2100F532EC /* ContentView.swift */,
+				F7601D6C2AA320D300E177B4 /* CoreData */,
+				F7601D682AA31A9800E177B4 /* Extension */,
+				F7601D612AA313E300E177B4 /* Component */,
+				F7601D6B2AA31B4600E177B4 /* App */,
 				F75152ED2A9C6A2200F532EC /* Assets.xcassets */,
 				F75152EF2A9C6A2200F532EC /* Preview Content */,
 			);
@@ -80,7 +94,7 @@
 		F7601D392AA06FB000E177B4 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				F7601D3A2AA06FCC00E177B4 /* MainView.swift */,
+				F7601D7A2AA32FD700E177B4 /* Main */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -93,6 +107,50 @@
 				F7601D662AA317DB00E177B4 /* CustomButton.swift */,
 			);
 			path = Component;
+			sourceTree = "<group>";
+		};
+		F7601D682AA31A9800E177B4 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				F7601D692AA31AFA00E177B4 /* View-Extensions.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		F7601D6B2AA31B4600E177B4 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				F75152E92A9C6A2100F532EC /* SetaraV2App.swift */,
+				F75152EB2A9C6A2100F532EC /* ContentView.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		F7601D6C2AA320D300E177B4 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				F7601D732AA321FB00E177B4 /* ParticipantProvider.swift */,
+				F7601D752AA323B000E177B4 /* Participants.xcdatamodeld */,
+				F7601D782AA32AA800E177B4 /* DataManager.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		F7601D702AA3214500E177B4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F7601D712AA3215000E177B4 /* ParticipantModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F7601D7A2AA32FD700E177B4 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				F7601D3A2AA06FCC00E177B4 /* MainView.swift */,
+				F7601D7B2AA32FE800E177B4 /* EmptyParticipantMainView.swift */,
+			);
+			path = Main;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -165,12 +223,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7601D742AA321FB00E177B4 /* ParticipantProvider.swift in Sources */,
 				F75152EC2A9C6A2100F532EC /* ContentView.swift in Sources */,
 				F7601D3B2AA06FCC00E177B4 /* MainView.swift in Sources */,
+				F7601D7C2AA32FE800E177B4 /* EmptyParticipantMainView.swift in Sources */,
 				F7601D672AA317DB00E177B4 /* CustomButton.swift in Sources */,
+				F7601D722AA3215000E177B4 /* ParticipantModel.swift in Sources */,
 				F7601D632AA3141000E177B4 /* RoundedRectangleView.swift in Sources */,
 				F7601D652AA314DE00E177B4 /* CustomColor.swift in Sources */,
 				F75152EA2A9C6A2100F532EC /* SetaraV2App.swift in Sources */,
+				F7601D792AA32AA800E177B4 /* DataManager.swift in Sources */,
+				F7601D6A2AA31AFA00E177B4 /* View-Extensions.swift in Sources */,
+				F7601D772AA323B000E177B4 /* Participants.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -371,6 +435,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F7601D752AA323B000E177B4 /* Participants.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F7601D762AA323B000E177B4 /* Participants.xcdatamodel */,
+			);
+			currentVersion = F7601D762AA323B000E177B4 /* Participants.xcdatamodel */;
+			path = Participants.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = F75152DE2A9C6A2100F532EC /* Project object */;
 }

@@ -9,6 +9,7 @@ import SwiftUI
 
 struct CustomButton: View {
     var textButton: String
+    var widthButton: CGFloat
     
     var body: some View {
         HStack(alignment: .center, spacing: 4) {
@@ -17,14 +18,14 @@ struct CustomButton: View {
         }
         .padding(.horizontal, 20)
         .padding(.vertical, 14)
-        .frame(width: 180, height: 40, alignment: .center)
-        .background(Color(red: 0.99, green: 0.58, blue: 0))
+        .frame(width: widthButton, height: 40, alignment: .center)
+        .background(Color.accentColor)
         .cornerRadius(12)
     }
 }
 
 struct CustomButton_Previews: PreviewProvider {
     static var previews: some View {
-        CustomButton(textButton: "Add Participant")
+        CustomButton(textButton: "Add Participant", widthButton: 110)
     }
 }
