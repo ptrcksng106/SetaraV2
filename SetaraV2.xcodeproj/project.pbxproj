@@ -7,16 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		647CEF4D2AA1923D00A2287F /* RouterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647CEF4C2AA1923D00A2287F /* RouterViewModel.swift */; };
+		647CEF502AA192DC00A2287F /* DetailSpendingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647CEF4F2AA192DC00A2287F /* DetailSpendingView.swift */; };
+		647CEF542AA2F20300A2287F /* ResultSpendingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647CEF532AA2F20300A2287F /* ResultSpendingView.swift */; };
+		647CEF5A2AA3135300A2287F /* ProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647CEF592AA3135300A2287F /* ProgressBar.swift */; };
+		647CEF5E2AA3177700A2287F /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647CEF5D2AA3177700A2287F /* PrimaryButton.swift */; };
+		647CEF612AA31B1F00A2287F /* SpendingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647CEF602AA31B1F00A2287F /* SpendingModel.swift */; };
+		647CEF642AA31BE900A2287F /* ParticipantSpendingList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647CEF632AA31BE900A2287F /* ParticipantSpendingList.swift */; };
 		F75152EA2A9C6A2100F532EC /* SetaraV2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75152E92A9C6A2100F532EC /* SetaraV2App.swift */; };
-		F75152EC2A9C6A2100F532EC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75152EB2A9C6A2100F532EC /* ContentView.swift */; };
+		F75152EC2A9C6A2100F532EC /* SpendingListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75152EB2A9C6A2100F532EC /* SpendingListView.swift */; };
 		F75152EE2A9C6A2200F532EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F75152ED2A9C6A2200F532EC /* Assets.xcassets */; };
 		F75152F12A9C6A2200F532EC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F75152F02A9C6A2200F532EC /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		647CEF4C2AA1923D00A2287F /* RouterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterViewModel.swift; sourceTree = "<group>"; };
+		647CEF4F2AA192DC00A2287F /* DetailSpendingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailSpendingView.swift; sourceTree = "<group>"; };
+		647CEF532AA2F20300A2287F /* ResultSpendingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultSpendingView.swift; sourceTree = "<group>"; };
+		647CEF592AA3135300A2287F /* ProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressBar.swift; sourceTree = "<group>"; };
+		647CEF5D2AA3177700A2287F /* PrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButton.swift; sourceTree = "<group>"; };
+		647CEF602AA31B1F00A2287F /* SpendingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpendingModel.swift; sourceTree = "<group>"; };
+		647CEF632AA31BE900A2287F /* ParticipantSpendingList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParticipantSpendingList.swift; sourceTree = "<group>"; };
 		F75152E62A9C6A2100F532EC /* SetaraV2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SetaraV2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F75152E92A9C6A2100F532EC /* SetaraV2App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetaraV2App.swift; sourceTree = "<group>"; };
-		F75152EB2A9C6A2100F532EC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F75152EB2A9C6A2100F532EC /* SpendingListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpendingListView.swift; sourceTree = "<group>"; };
 		F75152ED2A9C6A2200F532EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F75152F02A9C6A2200F532EC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -32,6 +46,66 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		647CEF4B2AA1921C00A2287F /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				647CEF4C2AA1923D00A2287F /* RouterViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		647CEF4E2AA1928A00A2287F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F75152EB2A9C6A2100F532EC /* SpendingListView.swift */,
+				647CEF4F2AA192DC00A2287F /* DetailSpendingView.swift */,
+				647CEF532AA2F20300A2287F /* ResultSpendingView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		647CEF582AA3133800A2287F /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				647CEF622AA31BC300A2287F /* ParticipantSpendingList */,
+				647CEF5C2AA3175F00A2287F /* Buttons */,
+				647CEF5B2AA3174C00A2287F /* ProgressBars */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
+		647CEF5B2AA3174C00A2287F /* ProgressBars */ = {
+			isa = PBXGroup;
+			children = (
+				647CEF592AA3135300A2287F /* ProgressBar.swift */,
+			);
+			path = ProgressBars;
+			sourceTree = "<group>";
+		};
+		647CEF5C2AA3175F00A2287F /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				647CEF5D2AA3177700A2287F /* PrimaryButton.swift */,
+			);
+			path = Buttons;
+			sourceTree = "<group>";
+		};
+		647CEF5F2AA31B0F00A2287F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				647CEF602AA31B1F00A2287F /* SpendingModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		647CEF622AA31BC300A2287F /* ParticipantSpendingList */ = {
+			isa = PBXGroup;
+			children = (
+				647CEF632AA31BE900A2287F /* ParticipantSpendingList.swift */,
+			);
+			path = ParticipantSpendingList;
+			sourceTree = "<group>";
+		};
 		F75152DD2A9C6A2100F532EC = {
 			isa = PBXGroup;
 			children = (
@@ -52,7 +126,10 @@
 			isa = PBXGroup;
 			children = (
 				F75152E92A9C6A2100F532EC /* SetaraV2App.swift */,
-				F75152EB2A9C6A2100F532EC /* ContentView.swift */,
+				647CEF5F2AA31B0F00A2287F /* Models */,
+				647CEF4E2AA1928A00A2287F /* Views */,
+				647CEF4B2AA1921C00A2287F /* ViewModels */,
+				647CEF582AA3133800A2287F /* Component */,
 				F75152ED2A9C6A2200F532EC /* Assets.xcassets */,
 				F75152EF2A9C6A2200F532EC /* Preview Content */,
 			);
@@ -137,8 +214,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F75152EC2A9C6A2100F532EC /* ContentView.swift in Sources */,
+				647CEF502AA192DC00A2287F /* DetailSpendingView.swift in Sources */,
+				647CEF542AA2F20300A2287F /* ResultSpendingView.swift in Sources */,
+				F75152EC2A9C6A2100F532EC /* SpendingListView.swift in Sources */,
+				647CEF642AA31BE900A2287F /* ParticipantSpendingList.swift in Sources */,
+				647CEF4D2AA1923D00A2287F /* RouterViewModel.swift in Sources */,
+				647CEF5E2AA3177700A2287F /* PrimaryButton.swift in Sources */,
+				647CEF5A2AA3135300A2287F /* ProgressBar.swift in Sources */,
 				F75152EA2A9C6A2100F532EC /* SetaraV2App.swift in Sources */,
+				647CEF612AA31B1F00A2287F /* SpendingModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,8 +357,9 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleDarkContent;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,8 +387,9 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleDarkContent;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
