@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct AddNewBillView: View {
-//    @State private var isThereareHistory = true
+    @State private var isNewBillConfirmation = false
     @State private var isNewBillorHistory = true
     @State private var chooseBill  = "New Bill"
     let choose = ["New Bill", "History"]
@@ -39,9 +39,18 @@ struct AddNewBillView: View {
                         .font(.system(size: 17, weight: .semibold))
                         .padding(.top, 17)
                     Button {
-                        print("OCR view")
+                        isNewBillConfirmation = true
                     } label: {
                         CustomButton(textButton: "Add New Bill")
+                    }
+                    .confirmationDialog("", isPresented: $isNewBillConfirmation) {
+                        Button("Camera Input") {
+                            print("OCR")
+                        }
+                        Button("Manual Input") {
+                            print("Manual Input")
+                        }
+                    
                     }
                     .padding(.top, 43)
                 } else {
@@ -121,7 +130,7 @@ struct HistoryView : View{
                         .font(.system(size: 17, weight: .semibold))
                         .padding(.top, 17)
                 }
-//                .padding(.top, 100)
+                .padding(.top, 100)
             }
         
     }
