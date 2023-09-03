@@ -11,7 +11,8 @@ import SwiftUI
 struct SetaraV2App: App {
     var body: some Scene {
         WindowGroup {
-            MainView()
+//            MainView()
+            AddNewBillView()
         }
     }
 }
