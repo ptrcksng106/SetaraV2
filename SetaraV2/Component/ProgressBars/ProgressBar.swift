@@ -39,5 +39,6 @@ struct ProgressBar: View {
 struct ProgressBar_Previews: PreviewProvider {
     static var previews: some View {
         ProgressBar(progress: 0.5, step: 2)
+            .preferredColorScheme(.dark)
     }
 }

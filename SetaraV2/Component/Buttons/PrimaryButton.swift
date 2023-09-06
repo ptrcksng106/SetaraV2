@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct PrimaryButton: View {
-    @State var text: String
+    @State var title: String
     var isButtonactive: Bool
     var onClicked: () -> Void
 
@@ -16,7 +16,7 @@ struct PrimaryButton: View {
         Button {
             onClicked()
         } label: {
-            Text(text)
+            Text(title)
                 .foregroundColor(.white)
                 .fontWeight(.medium)
                 .frame(width: 101, height: 40)
@@ -28,6 +28,7 @@ struct PrimaryButton: View {
 
 struct PrimaryButton_Previews: PreviewProvider {
     static var previews: some View {
-        PrimaryButton(text: "Next", isButtonactive: false) {}
+        PrimaryButton(title: "Next", isButtonactive: false) {}
+            .preferredColorScheme(.dark)
     }
 }

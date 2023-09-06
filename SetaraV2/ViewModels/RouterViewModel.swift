@@ -8,9 +8,8 @@
 import Foundation
 import SwiftUI
 
-enum Destination {
-    case detailSpendingView
-    case resultSpendingView
+enum Destination: Hashable{
+    case addItemView
 }
 
 class Router: ObservableObject {
@@ -19,24 +18,14 @@ class Router: ObservableObject {
     func popToRoot() {
         path.removeLast(path.count)
     }
-
-    func popToSomeView(view: Destination) {
-        if let pageIndex = path.firstIndex(of: view) {
-            path.removeLast(path.count - (pageIndex + 1))
-        } else {
-            print("Index not found")
-        }
-    }
 }
 
 class ViewFactory {
     @ViewBuilder
     static func viewForDestination(_ destination: Destination) -> some View {
         switch destination {
-        case .detailSpendingView:
-            DetailSpendingView()
-        case .resultSpendingView:
-            ResultSpendingView()
+        case .addItemView:
+            AddItemView()
         }
     }
 }
