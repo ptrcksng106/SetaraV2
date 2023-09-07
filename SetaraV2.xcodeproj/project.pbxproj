@@ -98,13 +98,9 @@
 		F7601D392AA06FB000E177B4 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-<<<<<<< HEAD
-				F7601D7A2AA32FD700E177B4 /* Main */,
-=======
 				F7601D3A2AA06FCC00E177B4 /* MainView.swift */,
 				E2015D082AA38E3A0042102E /* AddNewBillView.swift */,
 				E2015D0A2AA6B15C0042102E /* SummaryView.swift */,
->>>>>>> AddNewBill
 			);
 			path = Views;
 			sourceTree = "<group>";
