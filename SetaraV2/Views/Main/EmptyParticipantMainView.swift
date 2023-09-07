@@ -13,21 +13,23 @@ struct EmptyParticipantMainView: View {
     @FetchRequest(sortDescriptors: []) private var participantsItem: FetchedResults<Participant>
     
     var body: some View {
-        Image("imageParticipants")
-            .resizable()
-            .aspectRatio(contentMode: .fill)
-            .frame(width: 205, height: 205)
-            .clipped()
+        VStack {
+            Image("imageParticipants")
+                .resizable()
+                .aspectRatio(contentMode: .fill)
+                .frame(width: 205, height: 205)
+                .clipped()
 
-        Text("No Participants yet")
-            .font(Font.custom("SF Pro", size: 17))
-            .foregroundColor(.white.opacity(0.8))
-            .padding(.bottom, 20)
-        
-        Button {
-            addParticipant()
-        } label: {
-            CustomButton(textButton: "Add Participant", widthButton: 180)
+            Text("No Participants yet")
+                .font(Font.custom("SF Pro", size: 17))
+                .foregroundColor(.white.opacity(0.8))
+                .padding(.bottom, 20)
+            
+            Button {
+                addParticipant()
+            } label: {
+                CustomButton(textButton: "Add Participant", widthButton: 180)
+            }
         }
     }
     

@@ -14,9 +14,14 @@ struct SetaraV2App: App {
     
     var body: some Scene {
         WindowGroup {
+<<<<<<< HEAD:SetaraV2/App/SetaraV2App.swift
             MainView()
                 .environmentObject(manager)
                 .environment(\.managedObjectContext, manager.container.viewContext)
+=======
+//            MainView()
+            AddNewBillView()
+>>>>>>> AddNewBill:SetaraV2/SetaraV2App.swift
         }
     }
 }

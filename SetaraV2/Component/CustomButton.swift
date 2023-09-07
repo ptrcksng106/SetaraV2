@@ -16,6 +16,7 @@ struct CustomButton: View {
             Text("\(textButton)")
                 .foregroundColor(.white)
         }
+        .fontWeight(.semibold)
         .padding(.horizontal, 20)
         .padding(.vertical, 14)
         .frame(width: widthButton, height: 40, alignment: .center)
