@@ -40,7 +40,9 @@ struct MainView: View {
                                             .frame(maxWidth: .infinity, minHeight: 22, maxHeight: 22, alignment: .leading)
                                             .padding(.leading, 16)
                                         }
+                                    
                                     }
+                                .onDelete(perform: deleteParticipant)
                             }
                         }
                         .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topLeading)
@@ -63,7 +65,6 @@ struct MainView: View {
                                 .padding(.bottom, 18)
                         }
                     }
-                    
                     
                     Spacer()
                     
@@ -108,7 +109,20 @@ struct MainView: View {
         print("Cancelled")
               }
     }
+    
+    func deleteParticipant(at offsets: IndexSet) {
+        for offset in offsets {
+            let participant = participantsItem[offset]
+            viewContext.delete(participant)
+        }
+        try? viewContext.save()
+    }
 }
+
+//struct Delete: ViewModifier {
+//    let action: () -> Void
+//
+//}
 
 struct MainView_Previews: PreviewProvider {
     static var previews: some View {
