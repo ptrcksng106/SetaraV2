@@ -14,7 +14,7 @@ struct SetaraV2App: App {
     
     var body: some Scene {
         WindowGroup {
-            ParticipantView()
+            AddNewBillView()
                 .environmentObject(manager)
                 .environment(\.managedObjectContext, manager.container.viewContext)
         }

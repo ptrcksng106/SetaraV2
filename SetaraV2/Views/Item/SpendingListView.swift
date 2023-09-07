@@ -6,11 +6,12 @@
 //
 
 import SwiftUI
+import CoreData
 
 struct SpendingListView: View {
     @StateObject private var router = Router()
     @State private var showingAddItemSheet = false
-    @State private var manager: DataManager = DataManager()
+    //@State private var manager: DataManager = DataManager()
     
     var body: some View {
         NavigationStack(path: $router.path) {
@@ -54,8 +55,7 @@ struct SpendingListView: View {
                                                 .opacity(0.6)
                                             Spacer()
                                             NavigationLink(destination: ParticipantView()
-                                    .environmentObject(manager)
-                                                .environment(\.managedObjectContext, manager.container.viewContext)) {
+                                    ) {
                                                 Image(systemName: "plus.circle")
                                                     .foregroundColor(Color.gray)
                                             }
