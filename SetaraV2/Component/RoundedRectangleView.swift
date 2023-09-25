@@ -8,16 +8,11 @@
 import SwiftUI
 
 struct RoundedRectangleView: View {
+    @State var currentValue : Float = 1
     var body: some View {
-        ZStack(alignment: .leading) {
-            RoundedRectangle(cornerRadius: 100)
-                .frame(width: 330, height: 4, alignment: .center)
-                .foregroundColor(CustomColor.roundedBlackColor.opacity(0.32))
-            
-            RoundedRectangle(cornerRadius: 100)
-                .frame(width: 113.05264, height: 4, alignment: .center)
-                .foregroundColor(CustomColor.roundedGrayColor)
-        }
+       ProgressView(value: currentValue, total: 3)
+            .foregroundColor(Color.gray)
+            .padding(30)
     }
 }
 

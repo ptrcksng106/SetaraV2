@@ -10,10 +10,10 @@ import SwiftUI
 struct AddItemView: View {
     @State private var itemName: String = ""
     @State private var basePrice: String = ""
-    @State private var selectedQuantity = "2"
-    @State private var selectedDiscount = "10%"
-    let discount: [String] = ["1%", "2%", "3%", "4%", "10%"]
-    let quantity: [String] = ["1", "2", "3", "4"]
+    @State private var selectedQuantity = "0"
+    @State private var selectedDiscount = "0%"
+    let discount: [String] = ["0%","1%", "2%", "3%", "4%", "10%"]
+    let quantity: [String] = ["0","1", "2", "3", "4"]
     
     
     var body: some View {

@@ -85,12 +85,13 @@ struct SpendingListView: View {
             }
             .toolbar {
                 ToolbarItem {
-                    Button("Add Item") {
+                    Button("Add Bill") {
                         showingAddItemSheet.toggle()
                     }
                     .sheet(isPresented: $showingAddItemSheet) {
                         AddItemView()
-                            .presentationDetents([.height(650)])
+                            .preferredColorScheme(.dark)
+                            .presentationDetents([.height(560)])
                             .presentationDragIndicator(.visible)
                     }
                 }

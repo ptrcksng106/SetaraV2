@@ -74,18 +74,19 @@ struct ParticipantView: View {
                 
                 RoundedRectangleView()
             }
-            .toolbar {
-                ToolbarItem(placement: .navigationBarLeading) {
-                    VStack(alignment: .leading) {
-                        Text("Participants")
-                            .font(.title)
-                            .foregroundColor(.white)
-                        Text("Add split bill participants")
-                            .font(.title3)
-                            .foregroundColor(.white.opacity(0.8))
-                    }
-                }
-            }
+            .navigationTitle("Participant")
+//            .toolbar {
+//                ToolbarItem(placement: .navigationBarLeading) {
+//                    VStack(alignment: .leading) {
+//                        Text("Participants")
+//                            .font(.title)
+//                            .foregroundColor(.white)
+//                        Text("Add split bill participants")
+//                            .font(.title3)
+//                            .foregroundColor(.white.opacity(0.8))
+//                    }
+//                }
+//            }
         }
     }
     

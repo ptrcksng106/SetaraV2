@@ -17,6 +17,7 @@ struct SetaraV2App: App {
             AddNewBillView()
                 .environmentObject(manager)
                 .environment(\.managedObjectContext, manager.container.viewContext)
+                .environment(\.colorScheme, .dark)
         }
     }
 }

@@ -70,6 +70,7 @@ struct SummaryView: View {
 struct SummaryView_Previews: PreviewProvider {
     static var previews: some View {
         SummaryView()
+            .environment(\.colorScheme, .dark)
     }
 }
 

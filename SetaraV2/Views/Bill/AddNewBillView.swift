@@ -48,7 +48,7 @@ struct AddNewBillView: View {
                             Button("Camera Input") {
                                 print("OCR")
                             }
-                            NavigationLink(destination: AddItemView()) {
+                            NavigationLink(destination: AddItemView().preferredColorScheme(.dark)) {
                                 Text("Manual Input")
                             }
                         }
@@ -99,10 +99,19 @@ struct ListViewHistory: View {
                                             .font(.system(size: 15))
                                     }
                                     Spacer()
-                                    Button("Detail") {
+                                    Button {
                                         print("Move to Detail")
+                                    } label: {
+                                        ZStack{
+                                            HStack{
+                                                Text("Detail")
+                                                Image(systemName: "chevron.right")
+                                            }
+                                            .foregroundColor(.white.opacity(0.8))
+                                        }
                                     }
-                                    .foregroundColor(.white.opacity(0.8))
+
+                                    
                                 }
                                 .padding()
                             }

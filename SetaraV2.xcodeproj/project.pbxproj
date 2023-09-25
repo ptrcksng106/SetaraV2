@@ -36,6 +36,7 @@
 		647CEF652AA6E0A500A2287F /* AddItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddItemView.swift; sourceTree = "<group>"; };
 		E2015D082AA38E3A0042102E /* AddNewBillView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewBillView.swift; sourceTree = "<group>"; };
 		E2015D0A2AA6B15C0042102E /* SummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryView.swift; sourceTree = "<group>"; };
+		E205F33F2ABED89300EA2A96 /* SetaraV2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SetaraV2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F75152E92A9C6A2100F532EC /* SetaraV2App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SetaraV2App.swift; path = ../SetaraV2App.swift; sourceTree = "<group>"; };
 		F75152EB2A9C6A2100F532EC /* SpendingListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpendingListView.swift; sourceTree = "<group>"; };
 		F75152ED2A9C6A2200F532EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -47,7 +48,6 @@
 		F7601D712AA3215000E177B4 /* ParticipantModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParticipantModel.swift; sourceTree = "<group>"; };
 		F7601D732AA321FB00E177B4 /* ParticipantProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParticipantProvider.swift; sourceTree = "<group>"; };
 		F7601D782AA32AA800E177B4 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
-		F7CDE7A92AAA1D45000B9CEA /* SetaraV2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = SetaraV2.app; path = "/Users/patricksinaga/Documents/Learning/SetaraV2/build/Debug-iphoneos/SetaraV2.app"; sourceTree = "<absolute>"; };
 		F7CDE7AD2AAA20CA000B9CEA /* ParticipantView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParticipantView.swift; sourceTree = "<group>"; };
 		F7CDE7AF2AAA2138000B9CEA /* EmptyParticipantView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyParticipantView.swift; sourceTree = "<group>"; };
 		F7CDE7B62AAA278D000B9CEA /* Participant.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Participant.xcdatamodel; sourceTree = "<group>"; };
@@ -104,6 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				F75152E82A9C6A2100F532EC /* SetaraV2 */,
+				E205F33F2ABED89300EA2A96 /* SetaraV2.app */,
 			);
 			sourceTree = "<group>";
 		};
@@ -227,7 +228,7 @@
 			);
 			name = SetaraV2;
 			productName = SetaraV2;
-			productReference = F7CDE7A92AAA1D45000B9CEA /* SetaraV2.app */;
+			productReference = E205F33F2ABED89300EA2A96 /* SetaraV2.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
