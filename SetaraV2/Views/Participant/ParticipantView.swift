@@ -54,12 +54,17 @@ struct ParticipantView: View {
                         }
                     }
                     
-                    Button {
-                        
-                    } label: {
+                    NavigationLink(destination: SpendingListView()) {
                         CustomButton(textButton: "Next", widthButton: 101)
                             .padding(.bottom, 18)
                     }
+                    
+//                    Button {
+//                        
+//                    } label: {
+//                        CustomButton(textButton: "Next", widthButton: 101)
+//                            .padding(.bottom, 18)
+//                    }
                 }
                 
                 

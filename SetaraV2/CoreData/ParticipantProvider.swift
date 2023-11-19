@@ -11,7 +11,7 @@ import SwiftUI
 class ParticipantProvider {
     
     lazy var persistentContainer: NSPersistentContainer = {
-        let container = NSPersistentContainer(name: "Participants")
+        let container = NSPersistentContainer(name: "Participant")
         
         container.loadPersistentStores { _, error in
             guard error == nil else {

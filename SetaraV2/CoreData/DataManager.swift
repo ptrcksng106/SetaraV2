@@ -10,7 +10,7 @@ import CoreData
 class DataManager: NSObject, ObservableObject {
     @Published var participants: [ParticipantModel] = [ParticipantModel]()
     
-    let container: NSPersistentContainer = NSPersistentContainer(name: "Participants")
+    let container: NSPersistentContainer = NSPersistentContainer(name: "Participant")
     
     override init() {
         super.init()
